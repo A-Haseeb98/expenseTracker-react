@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
+}
+.myCard{
+  color: #282c34;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.left-card{
+
+}
+.myCard > .green{
+  padding-top: 20px !important;
+
+  height: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.myCard > .red{
+  padding-top: 20px !important;
+  height: 170px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+.green{
+  color: green;
+
+}
+.red{
+  color: red;
+
 }
 
-.App-header {
+.heading{
   background-color: #282c34;
-  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  
+}
+.history{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.add-item{
+  display: flex;
+  
+}
+.btn{
+  margin-top: 20px !important;
+  background-color: brown !important;
+}
+.col-5,.col-2,.col-12, .row{
+  margin: 0% !important;
+  padding: 0px !important;
+}
+.add-transaction-heading > h2{
+  font-size: 29px !important;
+}
+
+.current{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+.css-1fu7jd5-MuiButtonBase-root-MuiButton-root, .css-sghohy-MuiButtonBase-root-MuiButton-root{
+  background-color: #282c34 !important;
+}
+.css-1fu7jd5-MuiButtonBase-root-MuiButton-root:hover{
+  background-color:#32363d  !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
