@@ -38,7 +38,17 @@ function App() {
 
   let deleteItem = (index) => {
     console.log(history[index].amount, 'amount to add/subt')
-    setAmount(history[index].amount)
+    let value = history[index].amount;
+
+    setBalance(balance - history[index].amount )
+    if (value > 0){
+      setIncome(income - value )
+    }
+    else{
+      setExpense(expense - value )
+    }
+
+
     let arr = [...history]
     arr.splice(index, 1)
     console.log(arr)
